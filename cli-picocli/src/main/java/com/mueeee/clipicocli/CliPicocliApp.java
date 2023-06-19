@@ -13,16 +13,17 @@ public class CliPicocliApp implements Runnable {
 
     // 详细模式
     @Option(names = {"-v", "--verbose"}, description = "Verbose mode. Helpful for troubleshooting.")
-    private boolean verbose = false;
+    private final boolean verbose = false;
 
     // 文件处理方式
     @Option(names = {"-t", "--type"}, description = "File process mode", defaultValue = "1", showDefaultValue = CommandLine.Help.Visibility.ALWAYS)
-    private String type = "";
+    private final String type = "";
 
     // 多个文件参数
     @Parameters(arity = "1..*", paramLabel = "FILE", description = "File(s) to process.")
     private File[] inputFiles;
 
+    @Override
     public void run() {
         if (verbose) {
             System.out.println(inputFiles.length + " files to process...");
