@@ -14,11 +14,11 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>20</java.version>
+        <java.version>23</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
-        <graalvm.version>22.3.0</graalvm.version>
-        <native.maven.plugin.version>0.9.20</native.maven.plugin.version>
+        <graalvm.version>24.1.1</graalvm.version>
+        <native.maven.plugin.version>0.10.3</native.maven.plugin.version>
         <start-class>com.mueeee.webjlhttp.WebJLHttpApp</start-class>
     </properties>
 
